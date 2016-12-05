@@ -2,11 +2,22 @@ language: generic
 sudo: false
 branches:
   only:
-  - master
+    - master
+env:
+  - GIT_USEREMAIL="github@xephon.org"
+  - GIT_USERNAME="Nicolas Limage"
 before_install:
-- openssl aes-256-cbc -K $encrypted_98e2e2bc86aa_key -iv $encrypted_98e2e2bc86aa_iv
-  -in .travis_deploy.enc -out .travis_deploy -d
-- curl -L https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
-  | tar zxvOf - hugo_0.17_linux_amd64/hugo_0.17_linux_amd64 > hugo && chmod +x hugo
+  - openssl aes-256-cbc -K $encrypted_98e2e2bc86aa_key -iv $encrypted_98e2e2bc86aa_iv
+    -in .travis_deploy.enc -out .travis_deploy -d
+  - curl -L https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
+    | tar zxvOf - hugo_0.17_linux_amd64/hugo_0.17_linux_amd64 > hugo && chmod +x hugo
+install:
+  - git clone -b gh-pages git@github.com:nlm/blog.git public
 script:
-- ./hugo
+  - ./hugo --cleanDestinationDir -d public
+deploy:
+  provider: script
+  script:
+    - git config user.name "$GIT_USERNAME"
+    - git config user.email "$GIT_USEREMAIL"
+    - cd public && git add --all . && git commit -m "Publishing version $TRAVIS_BUILD_NUMBER" && git push origin gh-pages
