@@ -8,7 +8,7 @@ env:
   - GIT_USERNAME="Nicolas Limage"
 before_install:
   - openssl aes-256-cbc -K $encrypted_98e2e2bc86aa_key -iv $encrypted_98e2e2bc86aa_iv
-    -in .travis_deploy.enc -out .ssh/id_rsa -d
+    -in .travis_deploy.enc -out ~/.ssh/id_rsa -d
   - curl -L https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
     | tar zxvOf - hugo_0.17_linux_amd64/hugo_0.17_linux_amd64 > hugo && chmod +x hugo
 install:
