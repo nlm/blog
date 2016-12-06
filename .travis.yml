@@ -13,9 +13,7 @@ install:
     | tar zxvOf - hugo_0.17_linux_amd64/hugo_0.17_linux_amd64 > hugo && chmod +x hugo
 script:
   - ./hugo -d "$HUGO_DESTDIR"
-deploy:
-  provider: script
-  script:
-    - git config user.name "$GIT_USERNAME"
-    - git config user.email "$GIT_USEREMAIL"
-    - cd "$HUGO_DESTDIR" && git init && git add --all . && git commit -m "Publishing build $TRAVIS_BUILD_NUMBER" && git push --force origin gh-pages
+after_success:
+  - git config user.name "$GIT_USERNAME"
+  - git config user.email "$GIT_USEREMAIL"
+  - cd "$HUGO_DESTDIR" && git init && git add --all . && git commit -m "Publishing build $TRAVIS_BUILD_NUMBER" && git push --force origin gh-pages
