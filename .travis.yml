@@ -14,6 +14,6 @@ install:
 script:
   - ./hugo -d "$HUGO_DESTDIR"
 after_success:
-  - git config user.name "$GIT_USERNAME"
-  - git config user.email "$GIT_USEREMAIL"
+  - git config --global user.name "$GIT_USERNAME"
+  - git config --global user.email "$GIT_USEREMAIL"
   - cd "$HUGO_DESTDIR" && git init && git add --all . && git commit -m "Publishing build $TRAVIS_BUILD_NUMBER" && git push --force origin gh-pages
