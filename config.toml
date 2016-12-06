@@ -144,7 +144,7 @@ sidebarBehavior = 1
 # Otherwise put your image in folder `static/_images/` (development)  or in `source/assets/images/` if you can't or don't want to build the theme,
 # and use relative url : `your-image.png`
 #coverImage = "cover.jpg"
-coverImage = "blurry-forest.jpg"
+coverImage = "blurry-forest-50.jpg"
 
 # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
 imageGallery = true
