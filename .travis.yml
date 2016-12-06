@@ -4,19 +4,18 @@ branches:
   only:
     - master
 env:
-  - GIT_USEREMAIL="github@xephon.org" GIT_USERNAME="Nicolas Limage"
+  - GIT_USEREMAIL="github@xephon.org" GIT_USERNAME="Nicolas Limage" HUGO_DESTDIR=/tmp/hugo_public
 before_install:
   - openssl aes-256-cbc -K $encrypted_98e2e2bc86aa_key -iv $encrypted_98e2e2bc86aa_iv
     -in .travis_deploy.enc -out ~/.ssh/id_rsa -d && chmod 600 ~/.ssh/id_rsa
+install:
   - curl -L https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
     | tar zxvOf - hugo_0.17_linux_amd64/hugo_0.17_linux_amd64 > hugo && chmod +x hugo
-install:
-  - git clone -b gh-pages git@github.com:nlm/blog.git public
 script:
-  - ./hugo --cleanDestinationDir -d public
+  - ./hugo -d "$HUGO_DESTDIR"
 deploy:
   provider: script
   script:
     - git config user.name "$GIT_USERNAME"
     - git config user.email "$GIT_USEREMAIL"
-    - cd public && git add --all . && git commit -m "Publishing version $TRAVIS_BUILD_NUMBER" && git push origin gh-pages
+    - cd "$HUGO_DESTDIR" && git init && git add --all . && git commit -m "Publishing build $TRAVIS_BUILD_NUMBER" && git push --force origin gh-pages
