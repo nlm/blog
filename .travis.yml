@@ -1,17 +1,14 @@
 language: generic
 sudo: false
-cache:
-  - apt
 branches:
   only:
     - master
 install:
-  - curl -L https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
+  - curl -qL https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
     | tar zxvOf - hugo_0.17_linux_amd64/hugo_0.17_linux_amd64 > ~/hugo && chmod +x ~/hugo
 script:
   - ~/hugo -d /tmp/hugo_build
 deploy:
-  skip_cleanup: true
   provider: pages
   local-dir: /tmp/hugo_build
   github-token:
