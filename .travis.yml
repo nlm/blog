@@ -4,7 +4,7 @@ branches:
   only:
     - master
 install:
-  - curl -qL https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
+  - curl -sL https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz
     | tar zxvOf - hugo_0.17_linux_amd64/hugo_0.17_linux_amd64 > ~/hugo && chmod +x ~/hugo
 script:
   - ~/hugo -d /tmp/hugo_build
