@@ -18,6 +18,7 @@ title = "nlm's blog"
 theme = "tranquilpeak"
 disqusShortname = "nlm-blog"
 googleAnalytics = "UA-88581317-1"
+googleAnalyticsAsync = true
 paginate = 7
 defaultContentLanguage = "en-us"
 canonifyurls = true
