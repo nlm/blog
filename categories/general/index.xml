@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nlm&#39;s blog</title>
+    <link>https://nlm.github.io/blog/categories/general/index.xml</link>
+    <description>Recent content on nlm&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://nlm.github.io/blog/categories/general/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hello, World</title>
+      <link>https://nlm.github.io/blog/2016/12/hello-world/</link>
+      <pubDate>Tue, 06 Dec 2016 19:50:37 +0100</pubDate>
+      
+      <guid>https://nlm.github.io/blog/2016/12/hello-world/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Hello, World.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Welcome to my blog. It&amp;rsquo;s been a while I&amp;rsquo;ve been thinking about opening one,
+but I somehow lacked a bit of motivation. I needed a little something more
+to convince me to start it. It&amp;rsquo;s a bit about time, but also about fun, and
+convenience.
+&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m a unix sysadmin and a developer, and I usually prefer plaintext and
+console over web interfaces. So, when i discovered
+&lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt;, i was really happy.
+A simple language for simple documents, (almost) as easy to read in a terminal
+as it in a web interface, covering 99% of common document edition needs, no
+proprietary format, no complicated applications. Definately nice.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; is great example of markdown versatility.
+They use it to render all the README.md file that you see on projects front
+pages. Few style classes, few types of elements. This gives github a nice
+and coherent look-and-feel over all the site and projects it hosts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://nlm.github.io/blog/images/post/github-readme-markdown.png&#34; alt=&#34;Github README markdown&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;github-pages&#34;&gt;Github Pages&lt;/h2&gt;
+
+&lt;p&gt;After that, they pushed the concept further by creating
+&lt;a href=&#34;https://pages.github.com/&#34;&gt;Github Pages&lt;/a&gt;, powered by
+&lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;, a software written by one of Github&amp;rsquo;s founders.&lt;/p&gt;
+
+&lt;p&gt;The concept is simple: generating static-only sites. On Github Pages, the aim is
+to provide simple, versionable, developer-friendly and light pages to create
+(or generate) projects documentation.&lt;/p&gt;
+
+&lt;p&gt;Jekyll, itself, is not limited to documentation. Its core, combined with
+different templating engines, themes and plugins makes it a versatile and
+powerful publishing tool. And the permalinks, categories, pages, tags, posts
+and custom layouts make it perfectly suitable to host a blog.&lt;/p&gt;
+
+&lt;h2 id=&#34;creating-a-static-blog&#34;&gt;Creating a static blog&lt;/h2&gt;
+
+&lt;p&gt;Incredible! Blogging with just a text editor. The fun could finally start.&lt;/p&gt;
+
+&lt;p&gt;Now I needed:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;to learn Jekyll&lt;/li&gt;
+&lt;li&gt;a nice theme&lt;/li&gt;
+&lt;li&gt;somewhere to host the blog&lt;/li&gt;
+&lt;li&gt;a way to edit and make changes from anywhere&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Learning a new technology is always fun. So this was a already
+a decent motivation to learn jekyll but it&amp;rsquo;s even more fun to be able to
+apply it directly to a project.&lt;/p&gt;
+
+&lt;p&gt;As a Github user, it felt logical to host the content there.
+Plus the Markdown format used to create pages and posts is really suited
+to be versioned.&lt;/p&gt;
+
+&lt;p&gt;Regarding the hosting platform, I got my own, but since it&amp;rsquo;s all public,
+I see no problem hosting it on Github Pages. Plus it&amp;rsquo;s really simple since
+it&amp;rsquo;s already integrated, the publishing workflow is automatic and it&amp;rsquo;s free.&lt;/p&gt;
+
+&lt;p&gt;Everything going great for now.&lt;/p&gt;
+
+&lt;p&gt;While looking for a theme, I discovered &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, a static
+site generator written in &lt;a href=&#34;https://golang.org&#34;&gt;Go&lt;/a&gt;. As I felt rapidly more
+comfortable with it than with Jekyll, (and they got pretty themes, too),
+it became the generator for my blog. Since it&amp;rsquo;s a static binary, it&amp;rsquo;s also
+got no dependencies and is really faster to generate pages.&lt;/p&gt;
+
+&lt;p&gt;Nice, but it doesn&amp;rsquo;t have the advantage to be integrated in Github.
+So, it needs some automation, and this will the topic of another post !&lt;/p&gt;
+
+&lt;p&gt;(post icon credits: &lt;a href=&#34;http://tsukasa-tux.deviantart.com&#34;&gt;Tsukasa-Tux&lt;/a&gt;)&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

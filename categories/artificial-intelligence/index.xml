@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nlm&#39;s blog</title>
+    <link>https://nlm.github.io/blog/categories/artificial-intelligence/index.xml</link>
+    <description>Recent content on nlm&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://nlm.github.io/blog/categories/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A thought on autonomous cars</title>
+      <link>https://nlm.github.io/blog/2016/12/a-thought-on-autonomous-cars/</link>
+      <pubDate>Sun, 18 Dec 2016 23:43:44 +0100</pubDate>
+      
+      <guid>https://nlm.github.io/blog/2016/12/a-thought-on-autonomous-cars/</guid>
+      <description>
+
+&lt;p&gt;In a time where the first autonomous cars are hitting the road,
+new questions emerge on the behaviour and responsabilities of
+the artificial intelligence running these.
+&lt;!-- more /--&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;the-controversy-about-autonomous-vehicles&#34;&gt;The controversy about autonomous vehicles&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ve read a bit about this subject in the news lately. There is
+a contronversy on either it&amp;rsquo;ll be a good or bad thing to have
+autonomous cars on the streets. The main concern is where goes
+the responsability when something goes wrong.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;d like to say that i&amp;rsquo;m sure it&amp;rsquo;ll probably be a good thing overall.
+But it will probably go through a lot of scepticism and criticism
+in the beginning, even fear.&lt;/p&gt;
+
+&lt;p&gt;First, it&amp;rsquo;ll make people afraid. Every accident involving these vehicles
+will have thousands of times more publicity than any other accident.
+So, of course, it&amp;rsquo;ll probably get a bad reputation. Inevitably, some bugs
+will be present, and cause problems too, worsening the situation.&lt;/p&gt;
+
+&lt;p&gt;Then, there will be the problem of human jobs replacement. When you hire
+a man to drive a truck, there is a whole lot of laws and regulations that
+you have to obey. You have to pay a salary, deal with the sickness, insurances,
+working time, mandatory breaks, nights of sleep, vacations, unions, complaints.
+A whole lot of stuff that does not apply to robots.  So some people won&amp;rsquo;t
+like that, because it means a lot of people losing their jobs.&lt;/p&gt;
+
+&lt;p&gt;This will probably be the biggest problem here. For now there is no solution for
+large scale unemployment in this area, so this will be forbidden or limited
+by laws, using the argument of road safety to prevent these cars to be fully
+autonomous and requiring an operator.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-matter-of-responsability&#34;&gt;A matter of responsability&lt;/h2&gt;
+
+&lt;p&gt;Then there will be accidents involving more people. Because sometimes,
+whatever your driving skills, there is no way avoinding the accident.
+And at this time, someone has to take responsability.&lt;/p&gt;
+
+&lt;p&gt;This is why, like i said, at first the vehicles will probably not be allowed to
+be fully autonomous. Because nobody will want to take the responsability.
+And by saying &amp;ldquo;nobody&amp;rdquo;, i&amp;rsquo;m thinking of the car maker. Today, their
+responsability is limited to the mechanical defects of their vehicles. But
+when their software will be behind the wheel,
+they will be blamed for everything going wrong.
+So they just won&amp;rsquo;t take the chance.&lt;/p&gt;
+
+&lt;p&gt;The easy workaround here is to do like tesla did: The driver is in charge,
+and the car can drive under supervision. This is the way to go at first.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-road-is-non-standard&#34;&gt;A road is non-standard&lt;/h2&gt;
+
+&lt;p&gt;I don&amp;rsquo;t think cars are ready to drive on every kind of road for now,
+because roads are too different from each other. Even the same road
+can be different whether it&amp;rsquo;s day or night, summer or winter. City roads
+are different from country roads. So a first step would be to define on
+which kind of road a fully autonomous car will be competent.&lt;/p&gt;
+
+&lt;p&gt;A first step would be to define a set of requirements for the road. A set of
+characteristics on which the car can count on to locate and drive itself:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;signs&lt;/li&gt;
+&lt;li&gt;borders&lt;/li&gt;
+&lt;li&gt;lanes paintings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A second step will be to enhance cars artificial intelligence to handle
+the other kinds of roads. I think deep learning will play a huge role on this.
+Having some kind of hybrid intelligence cars: driving on deep learning, but
+respecting the basic predicates of standard hazard detection and self
+regulation rules.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-ethics&#34;&gt;The ethics&lt;/h2&gt;
+
+&lt;p&gt;To be continued&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

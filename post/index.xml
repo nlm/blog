@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Post-rsses on nlm&#39;s blog</title>
+    <link>https://nlm.github.io/blog/post/index.xml</link>
+    <description>Recent content in Post-rsses on nlm&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Dec 2016 23:43:44 +0100</lastBuildDate>
+    <atom:link href="https://nlm.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A thought on autonomous cars</title>
+      <link>https://nlm.github.io/blog/2016/12/a-thought-on-autonomous-cars/</link>
+      <pubDate>Sun, 18 Dec 2016 23:43:44 +0100</pubDate>
+      
+      <guid>https://nlm.github.io/blog/2016/12/a-thought-on-autonomous-cars/</guid>
+      <description>
+
+&lt;p&gt;In a time where the first autonomous cars are hitting the road,
+new questions emerge on the behaviour and responsabilities of
+the artificial intelligence running these.
+&lt;!-- more /--&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;the-controversy-about-autonomous-vehicles&#34;&gt;The controversy about autonomous vehicles&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ve read a bit about this subject in the news lately. There is
+a contronversy on either it&amp;rsquo;ll be a good or bad thing to have
+autonomous cars on the streets. The main concern is where goes
+the responsability when something goes wrong.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;d like to say that i&amp;rsquo;m sure it&amp;rsquo;ll probably be a good thing overall.
+But it will probably go through a lot of scepticism and criticism
+in the beginning, even fear.&lt;/p&gt;
+
+&lt;p&gt;First, it&amp;rsquo;ll make people afraid. Every accident involving these vehicles
+will have thousands of times more publicity than any other accident.
+So, of course, it&amp;rsquo;ll probably get a bad reputation. Inevitably, some bugs
+will be present, and cause problems too, worsening the situation.&lt;/p&gt;
+
+&lt;p&gt;Then, there will be the problem of human jobs replacement. When you hire
+a man to drive a truck, there is a whole lot of laws and regulations that
+you have to obey. You have to pay a salary, deal with the sickness, insurances,
+working time, mandatory breaks, nights of sleep, vacations, unions, complaints.
+A whole lot of stuff that does not apply to robots.  So some people won&amp;rsquo;t
+like that, because it means a lot of people losing their jobs.&lt;/p&gt;
+
+&lt;p&gt;This will probably be the biggest problem here. For now there is no solution for
+large scale unemployment in this area, so this will be forbidden or limited
+by laws, using the argument of road safety to prevent these cars to be fully
+autonomous and requiring an operator.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-matter-of-responsability&#34;&gt;A matter of responsability&lt;/h2&gt;
+
+&lt;p&gt;Then there will be accidents involving more people. Because sometimes,
+whatever your driving skills, there is no way avoinding the accident.
+And at this time, someone has to take responsability.&lt;/p&gt;
+
+&lt;p&gt;This is why, like i said, at first the vehicles will probably not be allowed to
+be fully autonomous. Because nobody will want to take the responsability.
+And by saying &amp;ldquo;nobody&amp;rdquo;, i&amp;rsquo;m thinking of the car maker. Today, their
+responsability is limited to the mechanical defects of their vehicles. But
+when their software will be behind the wheel,
+they will be blamed for everything going wrong.
+So they just won&amp;rsquo;t take the chance.&lt;/p&gt;
+
+&lt;p&gt;The easy workaround here is to do like tesla did: The driver is in charge,
+and the car can drive under supervision. This is the way to go at first.&lt;/p&gt;
+
+&lt;h2 id=&#34;a-road-is-non-standard&#34;&gt;A road is non-standard&lt;/h2&gt;
+
+&lt;p&gt;I don&amp;rsquo;t think cars are ready to drive on every kind of road for now,
+because roads are too different from each other. Even the same road
+can be different whether it&amp;rsquo;s day or night, summer or winter. City roads
+are different from country roads. So a first step would be to define on
+which kind of road a fully autonomous car will be competent.&lt;/p&gt;
+
+&lt;p&gt;A first step would be to define a set of requirements for the road. A set of
+characteristics on which the car can count on to locate and drive itself:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;signs&lt;/li&gt;
+&lt;li&gt;borders&lt;/li&gt;
+&lt;li&gt;lanes paintings&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A second step will be to enhance cars artificial intelligence to handle
+the other kinds of roads. I think deep learning will play a huge role on this.
+Having some kind of hybrid intelligence cars: driving on deep learning, but
+respecting the basic predicates of standard hazard detection and self
+regulation rules.&lt;/p&gt;
+
+&lt;h2 id=&#34;the-ethics&#34;&gt;The ethics&lt;/h2&gt;
+
+&lt;p&gt;To be continued&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The power of static websites</title>
+      <link>https://nlm.github.io/blog/2016/12/the-power-of-static-websites/</link>
+      <pubDate>Wed, 07 Dec 2016 01:50:37 +0100</pubDate>
+      
+      <guid>https://nlm.github.io/blog/2016/12/the-power-of-static-websites/</guid>
+      <description>&lt;p&gt;Static website generation is becoming cool again.&lt;/p&gt;
+
+&lt;p&gt;With third-party services offering easy integration into static pages
+on one side, and the hype around client-side javascript frameworks
+powering full-api sites on the other, there are more and more use-cases
+where serving static content is completely viable.&lt;/p&gt;
+
+&lt;p&gt;And there are many advantages to doing this.
+&lt;/p&gt;
+
+&lt;h2 id=&#34;security&#34;&gt;Security&lt;/h2&gt;
+
+&lt;p&gt;In the past years, web-based services and software have suffered countless
+security vulnerabilities. Developers are humans. So sometime they make mistakes.
+And a mistake can result in a security issue:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Injection flaws&lt;/li&gt;
+&lt;li&gt;Authentication flaws&lt;/li&gt;
+&lt;li&gt;Cross Site Scripting&lt;/li&gt;
+&lt;li&gt;Cross Site Request Forgery&lt;/li&gt;
+&lt;li&gt;Unvalidated redirects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But the users and admins can also cause problems:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Outdated or vulnerable software&lt;/li&gt;
+&lt;li&gt;Software misconfiguration&lt;/li&gt;
+&lt;li&gt;Broken architecture&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Static content, in the other hand, has a far smaller attack surface.
+There are still some attack vectors, but it eliminates a lot of threats.&lt;/p&gt;
+
+&lt;h2 id=&#34;performance&#34;&gt;Performance&lt;/h2&gt;
+
+&lt;p&gt;Website performance is crucial today. Studies have shown that people tend to
+quickly leave unresponsive websites. So, when you talk about an e-commerce
+website, the lack of speed quickly becomes missing money.&lt;/p&gt;
+
+&lt;p&gt;The closer the user is from the content, the quicker it&amp;rsquo;s delivered.
+With the rise of high-popularity worldwide websites, the need to put the content
+as close as possible is high. Plus, moving data around the globe costs money.
+It&amp;rsquo;s often cheaper to serve content from a near network.&lt;/p&gt;
+
+&lt;p&gt;To answer this need,
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Content_delivery_network&#34;&gt;CDN&lt;/a&gt; were created.
+They&amp;rsquo;re perfect for speeding up static or semi-static data delivery, but there
+are no miracles about dynamic content.&lt;/p&gt;
+
+&lt;div class=&#34;alert info &#34;&gt;
+  &lt;p&gt;When I talk about semi-static content, I think of dynamic but medium-lived,
+reusable content, with proper expiration info. Example: a dynamically-generated
+image valid for a few minutes, with
+&lt;a href=&#34;https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9&#34;&gt;cache control&lt;/a&gt;
+headers.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Usually, with server-side generated pages, the structured data is transfered
+from a data source (ex: SQL Database) to the server. Then the server use it to
+generate a page, putting all the content presentation layer around it, then
+transferring all of this to the client. A large part of the webpage will not
+change on the next call, but this will not be cached.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, static websites are often fully cacheable.
+All the presentation layer (pages, js,  css, images) will be transfered once
+from the source to the CDN, then to the client. Later calls from clients in the
+same region will be served directly from the CDN, and all of this is fully
+cacheable.&lt;/p&gt;
+
+&lt;p&gt;For client-side javascript sites using APIs, only the variable structured data
+will be transfered from the servers to the client. It means less traffic, less
+server processing, quicker page loads with quickly available partial content.&lt;/p&gt;
+
+&lt;p&gt;Plus, as some javascript frameworks become popular, they become available freely
+on vendor-provided CDNs, so clients of two different websites using the same
+version of the framework will probably get it from the same location.
+It means that when they will go visit the second site, parts of it will already
+be in the local cache.&lt;/p&gt;
+
+&lt;div class=&#34;alert success &#34;&gt;
+  &lt;p&gt;At &lt;a href=&#34;https://scaleway.com&#34;&gt;Scaleway&lt;/a&gt;, we run a fully static website, and a static
+user console powered by &lt;a href=&#34;https://angularjs.org&#34;&gt;AngularJS&lt;/a&gt;, only consuming APIs.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;simplicity&#34;&gt;Simplicity&lt;/h2&gt;
+
+&lt;p&gt;Running complex server software, or software with questionable security model
+(Who said PHP ?) increases the risks of misconfiguration or vulnerabilities.&lt;/p&gt;
+
+&lt;p&gt;Plus, complexity comes at a cost:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;deploying software&lt;/li&gt;
+&lt;li&gt;making sure it&amp;rsquo;s working&lt;/li&gt;
+&lt;li&gt;getting proper resources for it to run&lt;/li&gt;
+&lt;li&gt;doing regular updates&lt;/li&gt;
+&lt;li&gt;ensuring library compatibility&lt;/li&gt;
+&lt;li&gt;scaling&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All of this costs time and money.&lt;/p&gt;
+
+&lt;h2 id=&#34;tools&#34;&gt;Tools&lt;/h2&gt;
+
+&lt;p&gt;Many website creation tools emerged these last years, almost every popular
+language has its own.&lt;/p&gt;
+
+&lt;p&gt;Here are some famous ones:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gitbook.com&#34;&gt;GitBook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hexo.io&#34;&gt;Hexo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://octopress.org/&#34;&gt;Octopress&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(Source: &lt;a href=&#34;https://www.staticgen.com&#34;&gt;StaticGen&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;So, next time you have to choose the technology for a project,
+don&amp;rsquo;t forget to think about going static!&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello, World</title>
+      <link>https://nlm.github.io/blog/2016/12/hello-world/</link>
+      <pubDate>Tue, 06 Dec 2016 19:50:37 +0100</pubDate>
+      
+      <guid>https://nlm.github.io/blog/2016/12/hello-world/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Hello, World.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Welcome to my blog. It&amp;rsquo;s been a while I&amp;rsquo;ve been thinking about opening one,
+but I somehow lacked a bit of motivation. I needed a little something more
+to convince me to start it. It&amp;rsquo;s a bit about time, but also about fun, and
+convenience.
+&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m a unix sysadmin and a developer, and I usually prefer plaintext and
+console over web interfaces. So, when i discovered
+&lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Markdown&lt;/a&gt;, i was really happy.
+A simple language for simple documents, (almost) as easy to read in a terminal
+as it in a web interface, covering 99% of common document edition needs, no
+proprietary format, no complicated applications. Definately nice.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com&#34;&gt;Github&lt;/a&gt; is great example of markdown versatility.
+They use it to render all the README.md file that you see on projects front
+pages. Few style classes, few types of elements. This gives github a nice
+and coherent look-and-feel over all the site and projects it hosts.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://nlm.github.io/blog/images/post/github-readme-markdown.png&#34; alt=&#34;Github README markdown&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;github-pages&#34;&gt;Github Pages&lt;/h2&gt;
+
+&lt;p&gt;After that, they pushed the concept further by creating
+&lt;a href=&#34;https://pages.github.com/&#34;&gt;Github Pages&lt;/a&gt;, powered by
+&lt;a href=&#34;https://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;, a software written by one of Github&amp;rsquo;s founders.&lt;/p&gt;
+
+&lt;p&gt;The concept is simple: generating static-only sites. On Github Pages, the aim is
+to provide simple, versionable, developer-friendly and light pages to create
+(or generate) projects documentation.&lt;/p&gt;
+
+&lt;p&gt;Jekyll, itself, is not limited to documentation. Its core, combined with
+different templating engines, themes and plugins makes it a versatile and
+powerful publishing tool. And the permalinks, categories, pages, tags, posts
+and custom layouts make it perfectly suitable to host a blog.&lt;/p&gt;
+
+&lt;h2 id=&#34;creating-a-static-blog&#34;&gt;Creating a static blog&lt;/h2&gt;
+
+&lt;p&gt;Incredible! Blogging with just a text editor. The fun could finally start.&lt;/p&gt;
+
+&lt;p&gt;Now I needed:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;to learn Jekyll&lt;/li&gt;
+&lt;li&gt;a nice theme&lt;/li&gt;
+&lt;li&gt;somewhere to host the blog&lt;/li&gt;
+&lt;li&gt;a way to edit and make changes from anywhere&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Learning a new technology is always fun. So this was a already
+a decent motivation to learn jekyll but it&amp;rsquo;s even more fun to be able to
+apply it directly to a project.&lt;/p&gt;
+
+&lt;p&gt;As a Github user, it felt logical to host the content there.
+Plus the Markdown format used to create pages and posts is really suited
+to be versioned.&lt;/p&gt;
+
+&lt;p&gt;Regarding the hosting platform, I got my own, but since it&amp;rsquo;s all public,
+I see no problem hosting it on Github Pages. Plus it&amp;rsquo;s really simple since
+it&amp;rsquo;s already integrated, the publishing workflow is automatic and it&amp;rsquo;s free.&lt;/p&gt;
+
+&lt;p&gt;Everything going great for now.&lt;/p&gt;
+
+&lt;p&gt;While looking for a theme, I discovered &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;, a static
+site generator written in &lt;a href=&#34;https://golang.org&#34;&gt;Go&lt;/a&gt;. As I felt rapidly more
+comfortable with it than with Jekyll, (and they got pretty themes, too),
+it became the generator for my blog. Since it&amp;rsquo;s a static binary, it&amp;rsquo;s also
+got no dependencies and is really faster to generate pages.&lt;/p&gt;
+
+&lt;p&gt;Nice, but it doesn&amp;rsquo;t have the advantage to be integrated in Github.
+So, it needs some automation, and this will the topic of another post !&lt;/p&gt;
+
+&lt;p&gt;(post icon credits: &lt;a href=&#34;http://tsukasa-tux.deviantart.com&#34;&gt;Tsukasa-Tux&lt;/a&gt;)&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

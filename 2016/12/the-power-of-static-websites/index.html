@@ -1,0 +1,769 @@
+
+
+  
+    
+  
+
+
+  
+
+
+  
+
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.17">
+    <title>The power of static websites</title>
+    <meta name="author" content="Nicolas Limage">
+    <meta name="keywords" content="web, technology, static, security, performance, cdn">
+
+    <link rel="icon" href="https://nlm.github.io/blog/favicon.png">
+    
+
+    
+    <meta name="description" content="Static website generation is becoming cool again.
+
+With third-party services offering easy integration into static pages
+on one side, and the hype around client-side javascript frameworks
+powering full-api sites on the other, there are more and more use-cases
+where serving static content is completely viable.
+
+And there are many advantages to doing this.
+">
+    <meta property="og:description" content="Static website generation is becoming cool again.
+
+With third-party services offering easy integration into static pages
+on one side, and the hype around client-side javascript frameworks
+powering full-api sites on the other, there are more and more use-cases
+where serving static content is completely viable.
+
+And there are many advantages to doing this.
+">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="The power of static websites">
+    <meta property="og:url" content="/2016/12/the-power-of-static-websites/">
+    <meta property="og:site_name" content="nlm&#39;s blog">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="nlm&#39;s blog">
+    <meta name="twitter:description" content="Static website generation is becoming cool again.
+
+With third-party services offering easy integration into static pages
+on one side, and the hype around client-side javascript frameworks
+powering full-api sites on the other, there are more and more use-cases
+where serving static content is completely viable.
+
+And there are many advantages to doing this.
+">
+    
+    
+
+    
+    
+
+    
+      <meta property="og:image" content="//www.gravatar.com/avatar/f21a23bc45bb51c786ccea3cb45e4088?s=640">
+    
+
+    
+    
+    
+
+    
+
+    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" />
+    
+    
+    <link rel="stylesheet" href="https://nlm.github.io/blog/css/style-gwlo24d2hxipxk8bi1sxik0zhlpn9t7ebcmgp9kubmmcjfzlavuyhvbqumhn.min.css" />
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="1">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://nlm.github.io/blog/">nlm&#39;s blog</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://nlm.github.io/blog/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="//www.gravatar.com/avatar/f21a23bc45bb51c786ccea3cb45e4088?s=90" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="1">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://nlm.github.io/blog/#about">
+          <img class="sidebar-profile-picture" src="//www.gravatar.com/avatar/f21a23bc45bb51c786ccea3cb45e4088?s=110" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">Nicolas Limage</h4>
+        
+          <h5 class="sidebar-profile-bio">A blog about stuff. Captivated yet ?</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://nlm.github.io/blog/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://nlm.github.io/blog/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://nlm.github.io/blog/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://nlm.github.io/blog/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://nlm.github.io/blog/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/nlm" target="_blank">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://linkedin.com/in/nicolaslimage" target="_blank">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+      
+      <span class="sidebar-button-desc">LinkedIn</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://keybase.io/nlm" target="_blank">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-key"></i>
+      
+      <span class="sidebar-button-desc">Keybase</span>
+    </a>
+  </li>
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://nlm.github.io/blog/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="1"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      The power of static websites
+    </h1>
+  
+  <div class="postShorten-meta post-meta">
+  <time itemprop="datePublished" datetime="2016-12-07T01:50:37&#43;01:00">
+    
+  December 7, 2016
+
+  </time>
+  
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://nlm.github.io/blog/categories/technology">technology</a>
+    
+  
+
+
+  <div>607 words, 3 minutes read.</div>
+
+</div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>Static website generation is becoming cool again.</p>
+
+<p>With third-party services offering easy integration into static pages
+on one side, and the hype around client-side javascript frameworks
+powering full-api sites on the other, there are more and more use-cases
+where serving static content is completely viable.</p>
+
+<p>And there are many advantages to doing this.
+</p>
+
+<h2 id="security">Security</h2>
+
+<p>In the past years, web-based services and software have suffered countless
+security vulnerabilities. Developers are humans. So sometime they make mistakes.
+And a mistake can result in a security issue:</p>
+
+<ul>
+<li>Injection flaws</li>
+<li>Authentication flaws</li>
+<li>Cross Site Scripting</li>
+<li>Cross Site Request Forgery</li>
+<li>Unvalidated redirects</li>
+</ul>
+
+<p>But the users and admins can also cause problems:</p>
+
+<ul>
+<li>Outdated or vulnerable software</li>
+<li>Software misconfiguration</li>
+<li>Broken architecture</li>
+</ul>
+
+<p>Static content, in the other hand, has a far smaller attack surface.
+There are still some attack vectors, but it eliminates a lot of threats.</p>
+
+<h2 id="performance">Performance</h2>
+
+<p>Website performance is crucial today. Studies have shown that people tend to
+quickly leave unresponsive websites. So, when you talk about an e-commerce
+website, the lack of speed quickly becomes missing money.</p>
+
+<p>The closer the user is from the content, the quicker it&rsquo;s delivered.
+With the rise of high-popularity worldwide websites, the need to put the content
+as close as possible is high. Plus, moving data around the globe costs money.
+It&rsquo;s often cheaper to serve content from a near network.</p>
+
+<p>To answer this need,
+<a href="https://en.wikipedia.org/wiki/Content_delivery_network">CDN</a> were created.
+They&rsquo;re perfect for speeding up static or semi-static data delivery, but there
+are no miracles about dynamic content.</p>
+
+<div class="alert info ">
+  <p>When I talk about semi-static content, I think of dynamic but medium-lived,
+reusable content, with proper expiration info. Example: a dynamically-generated
+image valid for a few minutes, with
+<a href="https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9">cache control</a>
+headers.</p>
+</div>
+
+
+<p>Usually, with server-side generated pages, the structured data is transfered
+from a data source (ex: SQL Database) to the server. Then the server use it to
+generate a page, putting all the content presentation layer around it, then
+transferring all of this to the client. A large part of the webpage will not
+change on the next call, but this will not be cached.</p>
+
+<p>On the other hand, static websites are often fully cacheable.
+All the presentation layer (pages, js,  css, images) will be transfered once
+from the source to the CDN, then to the client. Later calls from clients in the
+same region will be served directly from the CDN, and all of this is fully
+cacheable.</p>
+
+<p>For client-side javascript sites using APIs, only the variable structured data
+will be transfered from the servers to the client. It means less traffic, less
+server processing, quicker page loads with quickly available partial content.</p>
+
+<p>Plus, as some javascript frameworks become popular, they become available freely
+on vendor-provided CDNs, so clients of two different websites using the same
+version of the framework will probably get it from the same location.
+It means that when they will go visit the second site, parts of it will already
+be in the local cache.</p>
+
+<div class="alert success ">
+  <p>At <a href="https://scaleway.com">Scaleway</a>, we run a fully static website, and a static
+user console powered by <a href="https://angularjs.org">AngularJS</a>, only consuming APIs.</p>
+</div>
+
+
+<h2 id="simplicity">Simplicity</h2>
+
+<p>Running complex server software, or software with questionable security model
+(Who said PHP ?) increases the risks of misconfiguration or vulnerabilities.</p>
+
+<p>Plus, complexity comes at a cost:</p>
+
+<ul>
+<li>deploying software</li>
+<li>making sure it&rsquo;s working</li>
+<li>getting proper resources for it to run</li>
+<li>doing regular updates</li>
+<li>ensuring library compatibility</li>
+<li>scaling</li>
+</ul>
+
+<p>All of this costs time and money.</p>
+
+<h2 id="tools">Tools</h2>
+
+<p>Many website creation tools emerged these last years, almost every popular
+language has its own.</p>
+
+<p>Here are some famous ones:</p>
+
+<ul>
+<li><a href="https://jekyllrb.com">Jekyll</a></li>
+<li><a href="https://www.gitbook.com">GitBook</a></li>
+<li><a href="https://gohugo.io">Hugo</a></li>
+<li><a href="https://hexo.io">Hexo</a></li>
+<li><a href="http://octopress.org/">Octopress</a></li>
+</ul>
+
+<p>(Source: <a href="https://www.staticgen.com">StaticGen</a>)</p>
+
+<p>So, next time you have to choose the technology for a project,
+don&rsquo;t forget to think about going static!</p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+              
+                <div class="post-footer-tags">
+                  <span class="text-color-light text-small">TAGGED IN</span><br/>
+                  
+  <a class="tag tag--primary tag--small" href="https://nlm.github.io/blog//tags/static-sites/">static sites</a>
+
+  <a class="tag tag--primary tag--small" href="https://nlm.github.io/blog//tags/web/">web</a>
+
+  <a class="tag tag--primary tag--small" href="https://nlm.github.io/blog//tags/angularjs/">angularjs</a>
+
+                </div>
+              
+            
+            <div class="post-actions-wrap">
+  <nav>
+    <ul class="post-actions post-action-nav">
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default tooltip--top" href="https://nlm.github.io/blog/2016/12/a-thought-on-autonomous-cars/" data-tooltip="A thought on autonomous cars">
+        
+          <i class="fa fa-angle-left"></i>
+          <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+        </a>
+      </li>
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default tooltip--top" href="https://nlm.github.io/blog/2016/12/hello-world/" data-tooltip="Hello, World">
+        
+          <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <ul class="post-actions post-action-share">
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+        <i class="fa fa-share-alt"></i>
+      </a>
+    </li>
+    <li class="post-action hide-xs">
+      <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fnlm.github.io%2fblog%2f2016%2f12%2fthe-power-of-static-websites%2f">
+        <i class="fa fa-google-plus"></i>
+      </a>
+    </li>
+    <li class="post-action hide-xs">
+      <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnlm.github.io%2fblog%2f2016%2f12%2fthe-power-of-static-websites%2f">
+        <i class="fa fa-facebook-official"></i>
+      </a>
+    </li>
+    <li class="post-action hide-xs">
+      <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fnlm.github.io%2fblog%2f2016%2f12%2fthe-power-of-static-websites%2f">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    
+      <li class="post-action">
+        <a class="post-action-btn btn btn--default" href="#disqus_thread">
+          <i class="fa fa-comment-o"></i>
+        </a>
+      </li>
+    
+    <li class="post-action">
+      
+        <a class="post-action-btn btn btn--default" href="#">
+      
+        <i class="fa fa-list"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2016 Nicolas Limage. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="1">
+        <div class="post-actions-wrap">
+  <nav>
+    <ul class="post-actions post-action-nav">
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default tooltip--top" href="https://nlm.github.io/blog/2016/12/a-thought-on-autonomous-cars/" data-tooltip="A thought on autonomous cars">
+        
+          <i class="fa fa-angle-left"></i>
+          <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+        </a>
+      </li>
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default tooltip--top" href="https://nlm.github.io/blog/2016/12/hello-world/" data-tooltip="Hello, World">
+        
+          <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+          <i class="fa fa-angle-right"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <ul class="post-actions post-action-share">
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+        <i class="fa fa-share-alt"></i>
+      </a>
+    </li>
+    <li class="post-action hide-xs">
+      <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fnlm.github.io%2fblog%2f2016%2f12%2fthe-power-of-static-websites%2f">
+        <i class="fa fa-google-plus"></i>
+      </a>
+    </li>
+    <li class="post-action hide-xs">
+      <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnlm.github.io%2fblog%2f2016%2f12%2fthe-power-of-static-websites%2f">
+        <i class="fa fa-facebook-official"></i>
+      </a>
+    </li>
+    <li class="post-action hide-xs">
+      <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fnlm.github.io%2fblog%2f2016%2f12%2fthe-power-of-static-websites%2f">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    
+      <li class="post-action">
+        <a class="post-action-btn btn btn--default" href="#disqus_thread">
+          <i class="fa fa-comment-o"></i>
+        </a>
+      </li>
+    
+    <li class="post-action">
+      
+        <a class="post-action-btn btn btn--default" href="#">
+      
+        <i class="fa fa-list"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="1">
+  <ul class="share-options">
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=https%3a%2f%2fnlm.github.io%2fblog%2f2016%2f12%2fthe-power-of-static-websites%2f">
+        <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
+      </a>
+    </li>
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fnlm.github.io%2fblog%2f2016%2f12%2fthe-power-of-static-websites%2f">
+        <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+      </a>
+    </li>
+    <li class="share-option">
+      <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3a%2f%2fnlm.github.io%2fblog%2f2016%2f12%2fthe-power-of-static-websites%2f">
+        <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="//www.gravatar.com/avatar/f21a23bc45bb51c786ccea3cb45e4088?s=110" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">Nicolas Limage</h4>
+    
+      <div id="about-card-bio">A blog about stuff. Captivated yet ?</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        DevOps
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Paris, France
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="Search" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center">no post found</div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://nlm.github.io/blog/2016/12/a-thought-on-autonomous-cars/">
+                <h3 class="media-heading">A thought on autonomous cars</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Dec 12, 2016
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">In a time where the first autonomous cars are hitting the road, new questions emerge on the behaviour and responsabilities of the artificial intelligence running these. The controversy about autonomous vehicles I&rsquo;ve read a bit about this subject in the news lately. There is a contronversy on either it&rsquo;ll be a good or bad thing to have autonomous cars on the streets. The main concern is where goes the responsability when something goes wrong.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://nlm.github.io/blog/2016/12/the-power-of-static-websites/">
+                <h3 class="media-heading">The power of static websites</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Dec 12, 2016
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>Static website generation is becoming cool again.</p>
+
+<p>With third-party services offering easy integration into static pages
+on one side, and the hype around client-side javascript frameworks
+powering full-api sites on the other, there are more and more use-cases
+where serving static content is completely viable.</p>
+
+<p>And there are many advantages to doing this.
+</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="https://nlm.github.io/blog/2016/12/hello-world/">
+                <h3 class="media-heading">Hello, World</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Dec 12, 2016
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><blockquote>
+<p>Hello, World.</p>
+</blockquote>
+
+<p>Welcome to my blog. It&rsquo;s been a while I&rsquo;ve been thinking about opening one,
+but I somehow lacked a bit of motivation. I needed a little something more
+to convince me to start it. It&rsquo;s a bit about time, but also about fun, and
+convenience.
+</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero="no post found"
+         data-message-one="1 post found"
+         data-message-other="{n} posts found">
+         3 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('https://nlm.github.io/blog/images/background/blurry-forest-50.jpg');"></div>
+  
+
+
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.js"></script>
+
+
+<script src="https://nlm.github.io/blog/js/script-wl33z0n6ocaypepiqrazthtivfrliqijej4rq8ek8gvrv1awftmgjuv8k4zc.min.js"></script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight').each(function(i, block) {
+    var code = "";
+    hljs.highlightAuto(block.innerText).value.split(/\r\n|\r|\n/).forEach(function(line) {
+      code += "<span class=\"line\">" + line + "</span><br>";
+    });
+    if (code.length > 0) {
+      block.innerHTML = code;  
+    }
+  });
+  $('pre > code').each(function(i, block) {
+    $(this).addClass('codeblock');
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/nlm.github.io\/blog\/2016\/12\/the-power-of-static-websites\/';
+          
+            this.page.identifier = '\/2016\/12\/the-power-of-static-websites\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'nlm-blog';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+  
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-88581317-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+  </body>
+</html>

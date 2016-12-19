@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>nlm&#39;s blog</title>
+    <link>https://nlm.github.io/blog/tags/static-sites/index.xml</link>
+    <description>Recent content on nlm&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://nlm.github.io/blog/tags/static-sites/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The power of static websites</title>
+      <link>https://nlm.github.io/blog/2016/12/the-power-of-static-websites/</link>
+      <pubDate>Wed, 07 Dec 2016 01:50:37 +0100</pubDate>
+      
+      <guid>https://nlm.github.io/blog/2016/12/the-power-of-static-websites/</guid>
+      <description>&lt;p&gt;Static website generation is becoming cool again.&lt;/p&gt;
+
+&lt;p&gt;With third-party services offering easy integration into static pages
+on one side, and the hype around client-side javascript frameworks
+powering full-api sites on the other, there are more and more use-cases
+where serving static content is completely viable.&lt;/p&gt;
+
+&lt;p&gt;And there are many advantages to doing this.
+&lt;/p&gt;
+
+&lt;h2 id=&#34;security&#34;&gt;Security&lt;/h2&gt;
+
+&lt;p&gt;In the past years, web-based services and software have suffered countless
+security vulnerabilities. Developers are humans. So sometime they make mistakes.
+And a mistake can result in a security issue:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Injection flaws&lt;/li&gt;
+&lt;li&gt;Authentication flaws&lt;/li&gt;
+&lt;li&gt;Cross Site Scripting&lt;/li&gt;
+&lt;li&gt;Cross Site Request Forgery&lt;/li&gt;
+&lt;li&gt;Unvalidated redirects&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But the users and admins can also cause problems:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Outdated or vulnerable software&lt;/li&gt;
+&lt;li&gt;Software misconfiguration&lt;/li&gt;
+&lt;li&gt;Broken architecture&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Static content, in the other hand, has a far smaller attack surface.
+There are still some attack vectors, but it eliminates a lot of threats.&lt;/p&gt;
+
+&lt;h2 id=&#34;performance&#34;&gt;Performance&lt;/h2&gt;
+
+&lt;p&gt;Website performance is crucial today. Studies have shown that people tend to
+quickly leave unresponsive websites. So, when you talk about an e-commerce
+website, the lack of speed quickly becomes missing money.&lt;/p&gt;
+
+&lt;p&gt;The closer the user is from the content, the quicker it&amp;rsquo;s delivered.
+With the rise of high-popularity worldwide websites, the need to put the content
+as close as possible is high. Plus, moving data around the globe costs money.
+It&amp;rsquo;s often cheaper to serve content from a near network.&lt;/p&gt;
+
+&lt;p&gt;To answer this need,
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Content_delivery_network&#34;&gt;CDN&lt;/a&gt; were created.
+They&amp;rsquo;re perfect for speeding up static or semi-static data delivery, but there
+are no miracles about dynamic content.&lt;/p&gt;
+
+&lt;div class=&#34;alert info &#34;&gt;
+  &lt;p&gt;When I talk about semi-static content, I think of dynamic but medium-lived,
+reusable content, with proper expiration info. Example: a dynamically-generated
+image valid for a few minutes, with
+&lt;a href=&#34;https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9&#34;&gt;cache control&lt;/a&gt;
+headers.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;Usually, with server-side generated pages, the structured data is transfered
+from a data source (ex: SQL Database) to the server. Then the server use it to
+generate a page, putting all the content presentation layer around it, then
+transferring all of this to the client. A large part of the webpage will not
+change on the next call, but this will not be cached.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, static websites are often fully cacheable.
+All the presentation layer (pages, js,  css, images) will be transfered once
+from the source to the CDN, then to the client. Later calls from clients in the
+same region will be served directly from the CDN, and all of this is fully
+cacheable.&lt;/p&gt;
+
+&lt;p&gt;For client-side javascript sites using APIs, only the variable structured data
+will be transfered from the servers to the client. It means less traffic, less
+server processing, quicker page loads with quickly available partial content.&lt;/p&gt;
+
+&lt;p&gt;Plus, as some javascript frameworks become popular, they become available freely
+on vendor-provided CDNs, so clients of two different websites using the same
+version of the framework will probably get it from the same location.
+It means that when they will go visit the second site, parts of it will already
+be in the local cache.&lt;/p&gt;
+
+&lt;div class=&#34;alert success &#34;&gt;
+  &lt;p&gt;At &lt;a href=&#34;https://scaleway.com&#34;&gt;Scaleway&lt;/a&gt;, we run a fully static website, and a static
+user console powered by &lt;a href=&#34;https://angularjs.org&#34;&gt;AngularJS&lt;/a&gt;, only consuming APIs.&lt;/p&gt;
+&lt;/div&gt;
+
+
+&lt;h2 id=&#34;simplicity&#34;&gt;Simplicity&lt;/h2&gt;
+
+&lt;p&gt;Running complex server software, or software with questionable security model
+(Who said PHP ?) increases the risks of misconfiguration or vulnerabilities.&lt;/p&gt;
+
+&lt;p&gt;Plus, complexity comes at a cost:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;deploying software&lt;/li&gt;
+&lt;li&gt;making sure it&amp;rsquo;s working&lt;/li&gt;
+&lt;li&gt;getting proper resources for it to run&lt;/li&gt;
+&lt;li&gt;doing regular updates&lt;/li&gt;
+&lt;li&gt;ensuring library compatibility&lt;/li&gt;
+&lt;li&gt;scaling&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All of this costs time and money.&lt;/p&gt;
+
+&lt;h2 id=&#34;tools&#34;&gt;Tools&lt;/h2&gt;
+
+&lt;p&gt;Many website creation tools emerged these last years, almost every popular
+language has its own.&lt;/p&gt;
+
+&lt;p&gt;Here are some famous ones:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.gitbook.com&#34;&gt;GitBook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://hexo.io&#34;&gt;Hexo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://octopress.org/&#34;&gt;Octopress&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(Source: &lt;a href=&#34;https://www.staticgen.com&#34;&gt;StaticGen&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;So, next time you have to choose the technology for a project,
+don&amp;rsquo;t forget to think about going static!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
