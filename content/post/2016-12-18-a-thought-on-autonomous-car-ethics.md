@@ -11,7 +11,6 @@ keywords:
 tags:
 - artificial intelligence
 - cars
-draft: true
 title: A thought on autonomous cars
 thumbnailImagePosition: left
 thumbnailImage: images/post/red-tesla.jpg
